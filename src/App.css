@@ -879,7 +879,7 @@ body{
   height: 484px;
   display: inline-grid;
   margin: 1rem 2rem;
-  background-color: rgb(253, 89, 29);
+  background-color: #F0B67F;
   border-width: 3px;
   border-style: solid;
   border-color: black;
@@ -962,7 +962,7 @@ body{
   border-radius: 7px;
   display: grid;
   grid-template-columns: 1fr 1.5fr;
-  background: rgb(29, 130, 253);
+  background: #F0B67F;
   text-align: center;
 }
 
