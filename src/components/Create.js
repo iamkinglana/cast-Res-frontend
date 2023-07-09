@@ -48,7 +48,7 @@ function Create({ currentUser }) {
   const handleFoodSubmit = (e) => {
     e.preventDefault()
     // myerror
-    fetch('http://localhost:3000/foods', {
+    fetch('/foods', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
