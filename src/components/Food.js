@@ -11,7 +11,7 @@ function Foods({ food }) {
         <div className="food-card-right">
           <p><b>Food Style:</b> {food.food_style}</p>
           <p><b>Toppings:</b> {food.toppings}</p>
-          <p><b>Condiments:</b> {food.flavoring}</p>
+          <p><b>Flavoring:</b> {food.flavoring}</p>
         </div>
       </div>
     </div>

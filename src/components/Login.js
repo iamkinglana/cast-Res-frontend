@@ -71,7 +71,7 @@ function Login({ setCurrentUser }) {
         <div className="welcome">
           <img
             className="welcome-img"
-            src="https://i.imgur.com/oAFz2Qm.png"
+            src="Cast.png"
             alt="welcome-img"
             onMouseEnter={imageHoverEnter}
             onMouseLeave={imageHoverExit}

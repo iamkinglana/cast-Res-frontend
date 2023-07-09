@@ -27,7 +27,7 @@ const Find = () => {
       if (filterByCondTop === "") {
         return true
       } else {
-        return rest.all_condiments_toppings.toLowerCase().includes(filterByCondTop.toLowerCase())
+        return rest.all_flavoring_toppings.toLowerCase().includes(filterByCondTop.toLowerCase())
       }
     })
   }
@@ -71,7 +71,7 @@ const Find = () => {
   }
 
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: "AIzaSyCPoZGaukhIBRKPs27oGwShRpWQWC12TCI",
+    googleMapsApiKey: "AIzaSyAE-cuNP8it3WFNjvQzJWBeI17awRKH96I",
     libraries,
   })
 
@@ -84,8 +84,8 @@ const Find = () => {
   }
 
   const center = {
-    lat: 37.761848,
-    lng: -122.445312,
+    lat: -1.286389,
+    lng: 36.817223,
   }
 
   return(

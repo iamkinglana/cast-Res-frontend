@@ -48,14 +48,14 @@ function Create({ currentUser }) {
   const handleFoodSubmit = (e) => {
     e.preventDefault()
     // myerror
-    fetch('http://localhost:3000/food', {
+    fetch('http://localhost:3000/foods', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         name: e.target.name.value,
         food_style: "All-Beef",
         toppings: `${onion} ${pepper} ${relish} ${sauerkraut}`,
-        condiments: `${ketchup} ${mustard}`,
+        falvoring: `${ketchup} ${mustard}`,
         restaurant_id: 8,
         user_id: currentUser.id
       })
