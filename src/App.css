@@ -55,17 +55,17 @@
   height: 480px;
   display: grid;
   grid-template-rows: 1fr 1.3fr;
-  background: rgb(0, 234, 255);
+  background: #FFFFF0;
 }
 
 .login-form-content-top {
-  background: rgb(0, 234, 255);
+  background: #F0B67F;
   border-radius: 5px 5px 0 0;
   position: relative;
 }
 
 .login-form-content-bottom {
-  background: rgb(0, 234, 255);
+  background: #F0B67F;
   border-radius: 0 0 5px 5px;
   position: relative;
 }
