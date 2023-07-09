@@ -136,9 +136,9 @@ body{
   left: -10px;
   right: -10px;
   width: 101.3%;
-  height: 110px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  height: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
   background: rgb(253, 89, 29);
 }
@@ -147,7 +147,11 @@ body{
   position: absolute;
   left: 50px;
   width: 150px;
-  height: auto
+  height: 50px;
+  padding-top: 35px;
+  background-size: contain;
+  object-fit: cover;
+  border-radius: 5px 5px 5px 5px ;
 }
 
 .navbar-btn {
@@ -155,7 +159,7 @@ body{
   position: relative;
   top: 35px;
   left: 90px;
-  margin-right: 50px;
+  margin-right: 30px;
   width: 120px;
   height: 50px;
   background: rgb(240, 214, 147);
@@ -176,7 +180,7 @@ body{
   display: inline-block;
   position: relative;
   top: 35px;
-  left: 220px;
+  left: 150px;
   width: 100px;
   height: 50px;
   background: rgb(14, 9, 7);
@@ -504,7 +508,9 @@ body{
   display: block;
   border-radius: 20px 20px 20px 20px;
 }
-
+.rest-details-img:hover{
+  scale: 1.1;
+}
 .rest-details {
   position: relative;
   display: grid;
@@ -521,11 +527,7 @@ body{
   background-color: rgb(243, 243, 243);
 
 }
-.rest-details-left:hover{
-  box-shadow: 0 5px 8px 0 rgb(253, 89, 29), 0 7px 20px 0 rgb(253, 89, 29);
 
-
-}
 
 .rest-details-right {
   position: relative;
@@ -535,11 +537,7 @@ body{
   background-color: rgb(243, 243, 243);
 
 }
-.rest-details-right:hover{
-  box-shadow: 0 5px 8px 0 rgb(253, 89, 29), 0 7px 20px 0 rgb(253, 89, 29);
 
-
-}
 
 .hotdog-card {
   margin: 20px auto;
@@ -660,264 +658,33 @@ body{
 /* PROFILE */
 
 .profile-container {
-  text-align: center
+  text-align: center;
+  width: 300px;
+  height: 350px;
+  margin: 20px auto;
+  padding: 20px;
 }
+.profile-container:hover{
+  box-shadow: 0 5px 8px 0 rgb(253, 89, 29), 0 7px 20px 0 rgb(253, 89, 29);
+
+
+}
+
+/* body styles and other CSS rules */
 
 .profile-inputs {
-    width: 160px;
-    height: 20px;
-    font-size: 1rem;
-    border-radius: 7px;
-    padding-left: 8px
-}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  background-color: #fdedd8
-}
-
-/* LOGIN */
-
-.welcome-header {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%
-}
-
-.welcome {
-  margin: 10px auto;
-  width: 500px;
-  position: relative;
-  top: 0px;
-  left: 150px;
-  height: 480px;
-}
-
-.welcome-img {
-  position: relative;
-  left: 70px;
-  width: 300px;
-  height: auto
-}
-
-.flex-container {
-  display: grid;
-  grid-template-columns: 0.5fr 1fr;
-  grid-gap: 0px
-}
-
-.login-form-container {
-  margin: 20px auto;
-  width: 350px;
-  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
-  position: relative;
-  top: 20px;
-  left: 0px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: black;
-  border-radius: 10px;
-  height: 480px;
-  display: grid;
-  grid-template-rows: 1fr 1.3fr;
-  background: rgb(240, 214, 147);
-}
-
-.login-form-content-top {
-  background: rgb(253, 89, 29);
-  border-radius: 5px 5px 0 0;
-  position: relative;
-}
-
-.login-form-content-bottom {
-  background: rgb(240, 214, 147);
-  border-radius: 0 0 5px 5px;
-  position: relative;
-}
-
-.sign-up-form {
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.login-form {
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.form-inputs {
-  margin-bottom: 0.5rem;
-  width: 80%;
-  height: 15%;
+  width: 160px;
+  height: 20px;
   font-size: 1rem;
-  border-radius: 10px;
-  padding-left: 8px
-}
-
-.form-input-btn {
-  width: 50%;
-  height: 40px;
-  margin-top: 10px;
   border-radius: 7px;
-  background: black;
-  outline: none;
-  border: none;
-  color: #F9e5cc;
-  font-size: 1rem;
-  cursor: pointer;
+  padding-left: 8px;
+
 }
-
-.form-input-btn:hover {
-  background: yellow;
-  color: black
-}
-
-.error-message {
-  font-size: 1rem;
-  text-align: center;
-  color: gray
-}
-
-/* NAVBAR */
-
-.navbar {
-  position: relative;
-  top: -10px;
-  left: -10px;
-  right: -10px;
-  width: 101.3%;
-  height: 110px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  text-align: center;
-  background: rgb(253, 89, 29);
-}
-
-.logo-img {
-  position: absolute;
-  left: 50px;
-  width: 150px;
-  height: auto
-}
-
-.navbar-btn {
-  display: inline-block;
-  position: relative;
-  top: 35px;
-  left: 90px;
-  margin-right: 50px;
-  width: 120px;
-  height: 50px;
-  background: rgb(240, 214, 147);
-  cursor: pointer;
-  font-size: 20px;
-  border-width: 2px;
-  border-style: solid;
-  border-color: black;
-  border-radius: 7px;
-}
-
-.navbar-btn:hover {
-  background: yellow
-}
-
-
-.navbar-btn-logout {
-  display: inline-block;
-  position: relative;
-  top: 35px;
-  left: 220px;
-  width: 100px;
-  height: 50px;
-  background: rgb(14, 9, 7);
-  cursor: pointer;
-  font-size: 20px;
-  color: rgb(240, 214, 147);
-  border-width: 2px;
-  border-style: solid;
-  border-color: black;
-  border-radius: 7px;
-}
-
-.navbar-btn-logout:hover {
-  background: yellow;
-  color: black
-}
-
-/* CREATE */
-
-.create-container {
-  text-align: center
-}
-
-.create-icon {
-  max-width: 150px;
-  max-height: 150px;
-  padding-right: 50px;
-  padding-top: 20px;
-  padding-bottom: 20px
-}
-
-.create-icon-onion {
-  max-width: 130px;
-  max-height: 130px;
-  padding-right: 50px;
-  padding-top: 20px;
-  padding-bottom: 30px
-}
-
-.created-dog {
-  position: relative;
-  top: 0;
-  left: 0;
-  padding-top: 50px;
-}
-
-.plain-hot-dog {
-  width: 600px;
-  height: auto;
-  position: absolute;
-  top:20px;
-  left: 350px;
-}
-
-.mustard_sqiggle {
-  width: 570px;
-  height: 100px;
-  transform: rotate(25deg);
-  position: absolute;
-  top: 110px;
-  left: 400px;
-}
-
-.ketchup_sqiggle {
-  width: 570px;
-  height: 100px;
-  transform: rotate(26deg);
-  position: absolute;
-  top: 190px;
-  left: 340px;
+.profile-container input{
+  margin-top: 1px;
+  padding: 5px;
+  margin-left: 4px;
+  align-items:self-start;
 }
 
 .chopped-onions {
@@ -1311,4 +1078,9 @@ body {
     font-size: 1rem;
     border-radius: 7px;
     padding-left: 8px
+}
+.profile-container label{
+  margin-top: 1px;
+  padding: 5px;
+  margin-right: 4px;
 }
