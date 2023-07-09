@@ -962,7 +962,7 @@ body{
   border-radius: 7px;
   display: grid;
   grid-template-columns: 1fr 1.5fr;
-  background: rgb(253, 89, 29);
+  background: rgb(29, 130, 253);
   text-align: center;
 }
 

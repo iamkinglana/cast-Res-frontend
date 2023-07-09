@@ -6,7 +6,7 @@ function Favorites({ currentUser }) {
 
   useEffect(() => {
     if (!!currentUser.id) {
-    fetch(`http://localhost:3000/favorites/${currentUser.id}`)
+    fetch(`/favorites/${currentUser.id}`)
       .then(res => res.json())
       .then(setFavorites)
       }
