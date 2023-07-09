@@ -630,11 +630,12 @@
   text-align: center
 }
 
-.profile-inputs {
-    width: 160px;
-    height: 20px;
-    font-size: 1rem;
-    border-radius: 7px;
-    padding-left: 8px
-}
+/* body styles and other CSS rules */
 
+.profile-inputs {
+  width: 160px;
+  height: 20px;
+  font-size: 1rem;
+  border-radius: 7px;
+  padding-left: 8px;
+}
