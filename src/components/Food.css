@@ -24,3 +24,8 @@
      background-size: cover;
      object-fit: cover;
  }
+ .food-img:hover{
+    scale: 1.1;
+    padding-top: 3px;
+    
+ }
