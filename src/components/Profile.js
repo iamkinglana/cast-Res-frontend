@@ -6,7 +6,7 @@ function Profile({ currentUser }) {
 
   function handleEdit(e) {
     e.preventDefault()
-    fetch(`http://localhost:3000/users/${currentUser.id}`, {
+    fetch(`/users/${currentUser.id}`, {
       method: 'PATCH',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({

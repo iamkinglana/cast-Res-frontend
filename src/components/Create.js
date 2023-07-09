@@ -17,38 +17,38 @@ function Create({ currentUser }) {
 
   const ketchupClick = (e) => {
     setKetchup(e.target.name)
-    setKetchupImageUrl("https://i.imgur.com/kSKGj9y.png")
+    setKetchupImageUrl("https://i.pinimg.com/236x/ac/35/8f/ac358f9e8352eeb3377339df2e218aa4.jpg")
   }
 
   const mustardClick = (e) => {
     setMustard(e.target.name)
-    setMustardImageUrl("https://i.imgur.com/mZFoFrb.png")
+    setMustardImageUrl("https://i.pinimg.com/236x/28/a9/49/28a949f884b7393f66a9624c3aff52e8.jpg")
   }
 
   const onionClick = (e) => {
     setOnion(e.target.name)
-    setOnionImageUrl("https://i.imgur.com/pvBIH9X.png")
+    setOnionImageUrl("https://i.pinimg.com/236x/04/ad/f7/04adf7878f38703d35f300bef510ad99.jpg")
   }
 
   const pepperClick = (e) => {
     setPepper(e.target.name)
-    setPepperImageUrl("https://i.imgur.com/pY5LVCM.png")
+    setPepperImageUrl("https://i.pinimg.com/236x/c4/89/d7/c489d7627b31f4c386c4803a3da262f7.jpg")
   }
 
   const relishClick = (e) => {
     setRelish(e.target.name)
-    setRelishImageUrl("https://i.imgur.com/dclxZRI.png")
+    setRelishImageUrl("https://i.pinimg.com/564x/c2/c5/b2/c2c5b2c1f3026a249107cbbc7842112f.jpg")
   }
 
   const sauerkrautClick = (e) => {
     setSauerkraut(e.target.name)
-    setSauerkrautImageUrl("https://i.imgur.com/gKfYD6P.png")
+    setSauerkrautImageUrl("https://i.pinimg.com/236x/6a/68/1c/6a681ceb5a197405e03d4814557cc963.jpg")
   }
 
   const handleFoodSubmit = (e) => {
     e.preventDefault()
     // myerror
-    fetch('http://localhost:3000/foods', {
+    fetch('/foods', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -95,13 +95,13 @@ function Create({ currentUser }) {
       : null}
 
         <div className="created-dog">
-          <img src="https://i.imgur.com/dGeZ09N.png" alt="plain-hot-dog" className="plain-hot-dog" />
-          {mustard ? <img src="https://i.imgur.com/5P5UO0l.png" alt="mustard_squiggle" className="mustard_sqiggle"/> : null }
-          {ketchup ? <img src="https://i.imgur.com/95ceEa4.png" alt="ketchup-squiggle" className="ketchup_sqiggle"/> : null }
-          {onion ? <img src="https://i.imgur.com/qPKxpz1.png" alt="chopped-onions" className="chopped-onions"/> : null }
-          {pepper ? <img src="https://i.imgur.com/hjsYuRK.png" alt="sliced-peppers" className="sliced-peppers"/> : null }
-          {relish ? <img src="https://i.imgur.com/9DQaH7E.png" alt="relish" className="relish"/> : null }
-          {sauerkraut ? <img src="https://i.imgur.com/khLkkD3.png" alt="sauerkraut" className="sauerkraut"/> : null }
+          <img src="https://i.pinimg.com/236x/c7/d1/ff/c7d1ffeaa8485ce3a7f9e0d3dcda48a3.jpg" alt="plain-hot-dog" className="plain-hot-dog" />
+          {mustard ? <img src="https://i.pinimg.com/236x/a7/1c/d8/a71cd85069c9541fd118704164cf9f75.jpg" alt="mustard_squiggle" className="mustard_sqiggle"/> : null }
+          {ketchup ? <img src="https://i.pinimg.com/236x/8f/53/d5/8f53d5098237b791c2b990cd5d01bb89.jpg" alt="ketchup-squiggle" className="ketchup_sqiggle"/> : null }
+          {onion ? <img src="https://i.pinimg.com/236x/72/5c/94/725c94198a80323c696459325eec18b0.jpg" alt="chopped-onions" className="chopped-onions"/> : null }
+          {pepper ? <img src="https://i.pinimg.com/originals/9b/8b/69/9b8b69be2856daab0b1927fce087f55d.jpg" alt="sliced-peppers" className="sliced-peppers"/> : null }
+          {relish ? <img src="https://i.pinimg.com/564x/c2/c5/b2/c2c5b2c1f3026a249107cbbc7842112f.jpg" alt="relish" className="relish"/> : null }
+          {sauerkraut ? <img src="https://i.pinimg.com/236x/4d/48/00/4d48008106cbae59f0d7f9696d92bf8f.jpg" alt="sauerkraut" className="sauerkraut"/> : null }
         </div>
     </div>
   )

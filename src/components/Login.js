@@ -54,9 +54,28 @@ function Login({ setCurrentUser }) {
       });
   }
 
+
   return (
     <div>
       <div style={{ backgroundImage: `url(${backgroundImage})` }} className="flex-container">
+
+  const imageHoverEnter = (e) => {
+    e.target.src = "Cast.png";
+  };
+
+  const imageHoverExit = (e) => {
+    e.target.src = "Cast.png";
+  };
+
+  return (
+    <div>
+      <img
+        className="welcome-header"
+        src=""
+        alt="welcome-header"
+      />
+      <div className="flex-container">
+
         <div className="welcome">
           <img
             className="welcome-img"
