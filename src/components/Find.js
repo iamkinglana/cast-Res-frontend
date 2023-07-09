@@ -13,7 +13,7 @@ const Find = () => {
   const [selectedRest, setSelectedRest] = useState(null)
 
   useEffect(() => {
-    fetch('http://localhost:3000/restaurants')
+    fetch('/restaurants')
       .then(res => res.json())
       .then(setRestaurants)
   }, [])

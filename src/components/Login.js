@@ -53,18 +53,18 @@ function Login({ setCurrentUser }) {
   }
 
   const imageHoverEnter = (e) => {
-    e.target.src = "https://i.imgur.com/01iYgmo.png";
+    e.target.src = "Cast.png";
   };
 
   const imageHoverExit = (e) => {
-    e.target.src = "https://i.imgur.com/oAFz2Qm.png";
+    e.target.src = "Cast.png";
   };
 
   return (
     <div>
       <img
         className="welcome-header"
-        src="https://i.imgur.com/I4Xf9E8.jpg"
+        src=""
         alt="welcome-header"
       />
       <div className="flex-container">
