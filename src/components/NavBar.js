@@ -19,7 +19,7 @@ function NavBar({ setCurrentUser }) {
 
   return (
     <div className="navbar">
-      <img src="https://i.imgur.com/5JFGSbX.jpg" alt="pic" className="logo-img" />
+      <img src="Cast.png" alt="pic" className="logo-img" />
       <Link to="/find">
         <button className="navbar-btn">Find</button>
       </Link>
