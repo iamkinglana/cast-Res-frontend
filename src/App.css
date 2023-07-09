@@ -2,7 +2,7 @@
 body{
   box-sizing: border-box;
   padding: 0;
-  margin: 0; 
+  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -449,12 +449,12 @@ body{
   border-radius: 7px;
   transform: all 0.3s;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
-  
+
 }
 .restaurant-card:hover{
   box-shadow: 0 5px 8px 0 rgb(253, 89, 29), 0 7px 20px 0 rgb(253, 89, 29);
 
-  
+
 }
 
 .rest-card-header {
@@ -516,7 +516,7 @@ body{
   position: relative;
   padding-left: 50px;
   align-items: center;
- 
+
   overflow:hidden;
   background-color: rgb(243, 243, 243);
 
@@ -530,7 +530,7 @@ body{
 .rest-details-right {
   position: relative;
   padding-top: 20px;
- 
+
   padding-left: 20px;
   background-color: rgb(243, 243, 243);
 
@@ -1262,10 +1262,10 @@ body {
   font-size: 1rem;
   border-radius: 7px;
   padding-left: 8px;
+  margin-top: 10px,
 
 }
-  margin-top: 10px;
-}
+
 
 .comment-btn {
   margin-left: 10px;
