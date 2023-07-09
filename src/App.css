@@ -1,4 +1,7 @@
 
+/* LOGIN */
+
+
 body{
   box-sizing: border-box;
   padding: 0;
@@ -8,6 +11,7 @@ body{
     sans-serif;
   background-color: #fdedd8
 }
+
 
 .welcome-header {
   padding-top: 20px;
@@ -29,15 +33,25 @@ body{
 
 .welcome-img {
   position: relative;
-  left: 70px;
-  width: 300px;
-  height: auto
+  right: 200px;
+  bottom: 200px;
+  width: 200px;
+  margin-top: 20%;
+  border-radius: 50%;
 }
 
 .flex-container {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 0.5fr 1fr;
-  grid-gap: 0px
+  grid-gap: 0px */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .login-form-container {
@@ -45,8 +59,8 @@ body{
   width: 350px;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
   position: relative;
-  top: 20px;
-  left: 0px;
+  top: 1px;
+  right: 500px;
   border-width: 5px;
   border-style: solid;
   border-color: black;
@@ -54,17 +68,17 @@ body{
   height: 480px;
   display: grid;
   grid-template-rows: 1fr 1.3fr;
-  background: rgb(240, 214, 147);
+  background: #FFFFF0;
 }
 
 .login-form-content-top {
-  background: rgb(253, 89, 29);
+  background: #F0B67F;
   border-radius: 5px 5px 0 0;
   position: relative;
 }
 
 .login-form-content-bottom {
-  background: rgb(240, 214, 147);
+  background: #F0B67F;
   border-radius: 0 0 5px 5px;
   position: relative;
 }
@@ -109,23 +123,23 @@ body{
   height: 40px;
   margin-top: 10px;
   border-radius: 7px;
-  background: black;
+  background: #007bff;
   outline: none;
   border: none;
-  color: #F9e5cc;
+  color: #ffffff;
   font-size: 1rem;
-  cursor: pointer;
+  cursor: auto;
 }
 
 .form-input-btn:hover {
-  background: yellow;
-  color: black
+  background: rgb(0, 30, 255);
+  color: #fff
 }
 
 .error-message {
   font-size: 1rem;
   text-align: center;
-  color: gray
+  color: rgb(255, 0, 0)
 }
 
 /* NAVBAR */
