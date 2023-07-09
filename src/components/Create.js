@@ -47,12 +47,13 @@ function Create({ currentUser }) {
 
   const handleFoodSubmit = (e) => {
     e.preventDefault()
-    fetch('http://localhost:3000/hot_dogs', {
+    // myerror
+    fetch('http://localhost:3000/food', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         name: e.target.name.value,
-        dog_style: "All-Beef",
+        food_style: "All-Beef",
         toppings: `${onion} ${pepper} ${relish} ${sauerkraut}`,
         condiments: `${ketchup} ${mustard}`,
         restaurant_id: 8,
@@ -81,7 +82,7 @@ function Create({ currentUser }) {
       <form onSubmit={e => handleFoodSubmit(e)}>
         <label className="create-label">Name: </label>
         <input className="create-input" type="text" name="name" />
-        <button className="create-btn">Add Hot Dog</button>
+        <button className="create-btn">Add Food</button>
       </form>
 
       {food ?

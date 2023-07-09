@@ -17,7 +17,7 @@ function RestaurantDetails({ currentUser }) {
     .then(rest => {
       setRestaurant(rest)
       setCommentsArr(rest.comments)
-      setFoodsArr(rest.hot_dogs)
+      setFoodsArr(rest.foods)
     })
   }, [id])
 
