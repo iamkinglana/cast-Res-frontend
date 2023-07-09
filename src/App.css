@@ -2,7 +2,11 @@
 body{
   box-sizing: border-box;
   padding: 0;
-  margin: 0; 
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background-color: #fdedd8
 }
 
 .welcome-header {
@@ -449,12 +453,12 @@ body{
   border-radius: 7px;
   transform: all 0.3s;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
-  
+
 }
 .restaurant-card:hover{
   box-shadow: 0 5px 8px 0 rgb(253, 89, 29), 0 7px 20px 0 rgb(253, 89, 29);
 
-  
+
 }
 
 .rest-card-header {
@@ -518,7 +522,7 @@ body{
   position: relative;
   padding-left: 50px;
   align-items: center;
- 
+
   overflow:hidden;
   background-color: rgb(243, 243, 243);
 
@@ -528,7 +532,7 @@ body{
 .rest-details-right {
   position: relative;
   padding-top: 20px;
- 
+
   padding-left: 20px;
   background-color: rgb(243, 243, 243);
 
@@ -681,6 +685,399 @@ body{
   padding: 5px;
   margin-left: 4px;
   align-items:self-start;
+}
+
+.chopped-onions {
+  width: 530px;
+  height: 50px;
+  transform: rotate(29deg);
+  position: absolute;
+  top: 150px;
+  left: 420px;
+}
+
+.sliced-peppers {
+  width: 500px;
+  height: 80px;
+  transform: rotate(22deg);
+  position: absolute;
+  top: 150px;
+  left: 400px;
+}
+
+.relish {
+  width: 500px;
+  height: auto;
+  transform: rotate(30deg);
+  position: absolute;
+  top: 170px;
+  left: 400px;
+}
+
+.sauerkraut {
+  width: 500px;
+  height: 50px;
+  transform: rotate(24deg);
+  position: absolute;
+  top: 200px;
+  left: 400px;
+}
+
+.create-label {
+  font-size: larger;
+}
+
+.create-input {
+  width: 15%;
+  height: 25px;
+  font-size: 1rem;
+  border-radius: 7px;
+  padding-left: 8px;
+  margin-top: 10px;
+}
+
+.create-btn {
+  margin-left: 10px;
+  width: 130px;
+  height: 30px;
+  background: rgb(240, 214, 147);
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 5px;
+  color: black;
+  font-size: 1rem;
+  cursor: pointer
+}
+
+.create-btn:hover {
+  background: yellow
+}
+
+/* LOGOUT */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999
+}
+
+.popup-inner {
+  position: relative;
+  padding: 32px;
+  width: 100%;
+  max-width: 500px;
+  background-color: white;
+  border-radius: 7px
+}
+
+.popup-inner .close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border-radius: 5px;
+  cursor: pointer
+}
+
+/* FIND */
+.find-header {
+  position: relative;
+  text-align: center;
+}
+
+.find-h1 {
+  display: inline-block;
+  position: relative;
+  padding-right: 20px;
+}
+
+.find-btn {
+  display: inline-block;
+  position: absolute;
+  top: 28px;
+  width: 100px;
+  height: 30px;
+  background: rgb(240, 214, 147);
+  cursor: pointer;
+  font-size: 17px;
+  color: black;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 5px;
+}
+
+.find-btn:hover {
+  background: yellow
+}
+
+.search-bar {
+  position: relative;
+  display: flex;
+  margin: auto;
+  width: 70%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 200px
+}
+
+.search-label {
+  padding-right: 5px;
+  padding-top: 2px
+}
+
+.search-input {
+  margin-bottom: 0.5rem;
+  width: 30%;
+  height: 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  padding-left: 5px
+}
+
+.rating-label {
+  padding-left: 15px;
+  padding-right: 5px;
+  padding-top: 2px
+}
+
+.rating-select {
+  margin-bottom: 0.5rem;
+  width: 7%;
+  height: 23px;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 2px
+}
+
+.map-details-btn {
+  width: 120px;
+  height: 30px;
+  background: rgb(240, 214, 147);
+  cursor: pointer;
+  font-size: 17px;
+  color: black;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 5px;
+}
+
+/* RESTAURANT CARD */
+
+.restaurant-card {
+  text-align: center;
+  border: grey solid 1px;
+  width: 500px;
+  height: 484px;
+  display: inline-grid;
+  margin: 1rem 2rem;
+  background-color: rgb(253, 89, 29);
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 7px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  display: inline-block
+}
+
+.rest-card-header {
+  margin-bottom: 20px;
+}
+
+.restaurant-img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  border-radius: 0 0 4px 4px;
+}
+
+.restaurant-details-btn {
+  width: 180px;
+  height: 30px;
+  background: rgb(240, 214, 147);
+  cursor: pointer;
+  font-size: 17px;
+  color: black;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 5px;
+}
+
+.restaurant-details-btn:hover {
+  background: yellow;
+}
+
+.rest-container {
+  text-align: center;
+}
+
+/* DETAILS */
+
+.rest-details-header {
+  text-align: center;
+}
+.rest-details-img {
+  max-width: 500px;
+  max-height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.rest-details {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.rest-details-left {
+  position: relative;
+  padding-left: 50px
+}
+
+.rest-details-right {
+  position: relative;
+  padding-top: 20px
+}
+
+.hotdog-card {
+  margin: 20px auto;
+  width: 700px;
+  height: 300px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  top: 20px;
+  left: 0px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 7px;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  background: rgb(253, 89, 29);
+  text-align: center;
+}
+
+.hotdog-img {
+  max-width: 200px;
+  max-height: 200px;
+  margin: 0 auto;
+  display: block;
+}
+
+.hotdog-card-left {
+  position: relative
+}
+
+.hotdog-card-right {
+  position: relative;
+  padding-top: 50px;
+  padding-right: 20px;
+  font-size: large;
+}
+
+.rest-details-btns {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.rest-details-btn {
+  width: 180px;
+  height: 30px;
+  background: rgb(240, 214, 147);
+  cursor: pointer;
+  font-size: 17px;
+  color: black;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 5px;
+}
+
+.rest-details-btn:hover {
+  background: yellow;
+}
+
+.details-rating-bar {
+  text-align: center;
+  padding: 20px
+}
+
+.details-rating-select {
+  width: 10%;
+  height: 2%;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-top: 2px;
+}
+
+.comment-form {
+  text-align: center;
+}
+
+.comment-input {
+  width: 50%;
+  height: 25px;
+  font-size: 1rem;
+  border-radius: 7px;
+  padding-left: 8px;
+  margin-top: 10px,
+
+}
+
+
+.comment-btn {
+  margin-left: 10px;
+  width: 160px;
+  height: 30px;
+  background: rgb(240, 214, 147);
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 5px;
+  color: black;
+  font-size: 1rem;
+  cursor: pointer
+}
+
+.comment-btn:hover {
+  background: yellow
+}
+
+.comments {
+  margin: 20px auto;
+  width: 400px;
+  height: 350px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 7px;
+  background: rgb(240, 214, 147);
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* PROFILE */
+
+.profile-container {
+  text-align: center
+}
+
+.profile-inputs {
+    width: 160px;
+    height: 20px;
+    font-size: 1rem;
+    border-radius: 7px;
+    padding-left: 8px
 }
 .profile-container label{
   margin-top: 1px;
