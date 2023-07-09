@@ -1,3 +1,4 @@
+import './Food.css'
 function Foods({ food }) {
 
   return(
