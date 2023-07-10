@@ -54,115 +54,100 @@ function Login({ setCurrentUser }) {
       });
   }
 
-  const imageHoverEnter = (e) => {
-    e.target.src = "Cast.png";
-  };
-
-  const imageHoverExit = (e) => {
-    e.target.src = "Cast.png";
-  };
-
   return (
     <div>
       <div style={{ backgroundImage: `url(${backgroundImage})` }} className="flex-container">
-        <div className="welcome-header">
-          <img className="welcome-img" src="" alt="welcome-img" />
+        <div className="welcome">
+          <img
+            className="welcome-img"
+            src="Cast.png"
+            alt="welcome-img"
+          />
         </div>
-        <div className="flex-container">
-          <div className="welcome">
-            <img
-              className="welcome-img"
-              src="Cast.png"
-              alt="welcome-img"
-              onMouseEnter={imageHoverEnter}
-              onMouseLeave={imageHoverExit}
-            />
-          </div>
-          <div className="login-form-container">
-            {!isLoggedIn && !hasSignedUp && (
-              <div className="login-form-content-bottom">
-                <form className="sign-up-form" onSubmit={onSignupSubmit}>
-                  <input
-                    className="form-inputs"
-                    placeholder="First and Last Name"
-                    type="text"
-                    value={nameSign}
-                    onChange={(e) => setNameSign(e.target.value)}
-                  />
-                  <input
-                    className="form-inputs"
-                    placeholder="Username"
-                    type="text"
-                    value={userSign}
-                    onChange={(e) => setUserSign(e.target.value)}
-                  />
-                  <input
-                    className="form-inputs"
-                    placeholder="Password"
-                    type="password"
-                    value={passSign}
-                    onChange={(e) => setPassSign(e.target.value)}
-                  />
-                  <button className="form-input-btn" type="submit">
-                    Signup
-                  </button>
-                </form>
-              </div>
-            )}
-
-            {!isLoggedIn && (
-              <div className="login-form-content-top">
-                <form className="login-form" onSubmit={onLoginSubmit}>
-                  <input
-                    className="form-inputs"
-                    placeholder="Username"
-                    type="text"
-                    value={userLog}
-                    onChange={(e) => setUserLog(e.target.value)}
-                  />
-                  <input
-                    className="form-inputs"
-                    placeholder="Password"
-                    type="password"
-                    value={passLog}
-                    onChange={(e) => setPassLog(e.target.value)}
-                  />
-                  <button className="form-input-btn" type="submit">
-                    Login
-                  </button>
-                </form>
-              </div>
-            )}
-
-            {isLoggedIn && (
-              <div className="login-form-content-top">
-                <h2>Signup Successful!</h2>
-
-                <form className="login-form" onSubmit={onLoginSubmit}>
-                  <input
-                    className="form-inputs"
-                    placeholder="Username"
-                    type="text"
-                    value={userLog}
-                    onChange={(e) => setUserLog(e.target.value)}
-                  />
-                  <input
-                    className="form-inputs"
-                    placeholder="Password"
-                    type="password"
-                    value={passLog}
-                    onChange={(e) => setPassLog(e.target.value)}
-                  />
-                  <button className="form-input-btn" type="submit">
-                    Login
-                  </button>
-                </form>
-              </div>
-            )}
-
-            <div className="error-message">
-              {errors && errors.map((error) => <p key={error}>{error}</p>)}
+        <div className="login-form-container">
+          {!isLoggedIn && !hasSignedUp && (
+            <div className="login-form-content-bottom">
+              <form className="sign-up-form" onSubmit={onSignupSubmit}>
+                <input
+                  className="form-inputs"
+                  placeholder="First and Last Name"
+                  type="text"
+                  value={nameSign}
+                  onChange={(e) => setNameSign(e.target.value)}
+                ></input>
+                <input
+                  className="form-inputs"
+                  placeholder="Username"
+                  type="text"
+                  value={userSign}
+                  onChange={(e) => setUserSign(e.target.value)}
+                ></input>
+                <input
+                  className="form-inputs"
+                  placeholder="Password"
+                  type="password"
+                  value={passSign}
+                  onChange={(e) => setPassSign(e.target.value)}
+                ></input>
+                <button className="form-input-btn" type="submit">
+                  Signup
+                </button>
+              </form>
             </div>
+          )}
+
+          {!isLoggedIn && (
+            <div className="login-form-content-top">
+              <form className="login-form" onSubmit={onLoginSubmit}>
+                <input
+                  className="form-inputs"
+                  placeholder="Username"
+                  type="text"
+                  value={userLog}
+                  onChange={(e) => setUserLog(e.target.value)}
+                ></input>
+                <input
+                  className="form-inputs"
+                  placeholder="Password"
+                  type="password"
+                  value={passLog}
+                  onChange={(e) => setPassLog(e.target.value)}
+                ></input>
+                <button className="form-input-btn" type="submit">
+                  Login
+                </button>
+              </form>
+            </div>
+          )}
+
+          {isLoggedIn && (
+            <div className="login-form-content-top">
+              <h2>Signup Successful!</h2>
+
+              <form className="login-form" onSubmit={onLoginSubmit}>
+                <input
+                  className="form-inputs"
+                  placeholder="Username"
+                  type="text"
+                  value={userLog}
+                  onChange={(e) => setUserLog(e.target.value)}
+                ></input>
+                <input
+                  className="form-inputs"
+                  placeholder="Password"
+                  type="password"
+                  value={passLog}
+                  onChange={(e) => setPassLog(e.target.value)}
+                ></input>
+                <button className="form-input-btn" type="submit">
+                  Login
+                </button>
+              </form>
+            </div>
+          )}
+
+          <div className="error-message">
+            {errors && errors.map((error) => <p key={error}>{error}</p>)}
           </div>
         </div>
       </div>
