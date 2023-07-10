@@ -190,13 +190,13 @@
   color: rgb(240, 214, 147);
   border-width: 2px;
   border-style: solid;
-  border-color: black;
+  border-color: rgb(219, 15, 15);
   border-radius: 7px;
 }
 
 .navbar-btn-logout:hover {
   background: #563517;
-  color: black
+  color: rgb(216, 210, 210)
 }
 
 /* CREATE */

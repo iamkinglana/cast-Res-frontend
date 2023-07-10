@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Casts App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Casts App is a user-friendly mobile application that revolutionizes the way users discover and choose restaurants based on their preferences and cravings. Whether you're in the mood for a specific ingredient or want to explore top-rated dining spots, our app provides a seamless and personalized dining experience.
 
-## Available Scripts
+## Live link
 
-In the project directory, you can run:
+Front end
 
-### `npm start`
+https://cast-res-frontend-td4k.vercel.app/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- **Search by Preferences**: Users can search for restaurants based on their specific preferences, such as cuisine type, dietary restrictions, or ingredient cravings. The app generates a tailored list of restaurants that match the user's preferences.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Ratings and Reviews**: Access a comprehensive database of ratings and reviews for restaurants. Users can read the experiences of other users to make informed decisions about where to dine.
 
-### `npm run build`
+- **Online Ordering**: Enjoy the convenience of placing online orders directly through the app. Users can select their desired dishes, customize their orders, and choose between delivery or pickup options.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Menu Exploration**: Browse through complete menus of restaurants to discover a wide range of dishes. From appetizers to desserts, users can explore various categories and find new culinary delights.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Personalized Recommendations**: The app learns user preferences over time and provides personalized restaurant recommendations. Users can discover hidden gems and restaurants that align with their unique tastes.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Bookmark and Favorite**: Users can save their favorite restaurants for quick and easy access in the future. The app allows users to create a personalized list of go-to dining spots for different occasions.
 
-### `npm run eject`
+## Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository: `git@github.com:iamkinglana/cast-res-frontend.git`
+2. Install the necessary dependencies: `npm install`
+3. Run the app locally: `npm start`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Launch the Casts App on your mobile device.
+2. Set your dining preferences by selecting your desired cuisine types, dietary restrictions, and specific ingredients you crave.
+3. Browse through the recommended restaurants based on your preferences.
+4. View menus, ratings, and reviews to evaluate which restaurant suits your taste.
+5. Place online orders by customizing your order, choosing delivery or pickup options, and completing the transaction securely.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contributing
 
-## Learn More
+We welcome contributions from everyone! If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contact
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+For further information or inquiries, please contact our support team at support@restaurantfinderapp.com.
 
-### Code Splitting
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
