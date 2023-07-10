@@ -27,8 +27,11 @@ function Login({ setCurrentUser }) {
           setHasSignedUp(true);
           setIsLoggedIn(true);
         } else {
-          res.json().then((errorData) => setErrors(errorData.errors));
+          handleErrors(res);
         }
+      })
+      .catch((error) => {
+        console.error("Signup request failed:", error);
       });
   }
 
@@ -43,15 +46,28 @@ function Login({ setCurrentUser }) {
     })
       .then((res) => {
         if (res.ok) {
-          res.json().then((user) => {
-            setCurrentUser(user);
+          res.json().then((userData) => {
+            setCurrentUser(userData);
             setIsLoggedIn(true);
             navigate("/find");
           });
         } else {
-          res.json().then((errorData) => setErrors(errorData.errors));
+          handleErrors(res);
         }
+      })
+      .catch((error) => {
+        console.error("Login request failed:", error);
       });
+  }
+
+  function handleErrors(res) {
+    res.json().then((errorData) => {
+      if (errorData && errorData.errors) {
+        setErrors(errorData.errors);
+      } else {
+        console.error("Error data is invalid:", errorData);
+      }
+    });
   }
 
   return (
